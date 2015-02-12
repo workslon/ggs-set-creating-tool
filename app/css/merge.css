@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  background: transparent;
+}
+#wrapper {
+  position: relative;
+  background: url(../images/polybg.jpg) repeat;
+}
+#window-controls {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  -webkit-app-region: no-drag;
+}
+#window-controls > div {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+#window-hide-btn {
+  position: relative;
+  top: -9px;
+}
+section {
+  display: none;
+  padding: 20px 20px 10px 20px;
+  -webkit-app-region: no-drag;
+}
+section input[type="text"] {
+  background: rgba(255, 255, 255, 0.9);
+}
+.visible {
+  display: block !important;
+}
+.toggle-link {
+  font-size: 15px;
+  line-height: 200%;
+  color: #fff;
+}
+.toggle-link:hover,
+.toggle-link:visited,
+.toggle-link:active,
+.toggle-link:focus {
+  color: #fff;
+}
+#btn-create,
+#btn-prepare {
+  color: #fff;
+  border-color: #ec9123;
+  background: #ec9123;
+}
+header {
+  width: 100%;
+  height: 66px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background: #002855;
+}
+header img {
+  float: left;
+  display: block;
+  width: 145px;
+  height: 37px;
+  margin-top: 14px;
+}
+/* nav */
+#main-nav {
+  float: right;
+  overflow: hidden;
+  padding-top: 30px;
+}
+#main-nav li {
+  position: relative;
+  float: left;
+  display: block;
+  width: auto;
+  margin-left: 15px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  font-size: 16px;
+  line-height: 10px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#main-nav li.current {
+  border-bottom: 3px solid #faa61a;
+}
+.well {
+  margin: 0 20px;
+  -webkit-app-region: no-drag; 
+  background: rgba(255, 255, 255, 0.9);
+}
+#alert {
+  display: none;
+  margin: 20px 20px 20px 20px;
+  -webkit-app-region: no-drag;
+}
+#alert.visible {
+  display: block;
+}
+#create-set .form-group > label > span {
+  color: #fff;
+}
+#prepare-test h5,
+#prepare-test label {
+  color: #fff;
+}
+#prepare-test .input-group-addon:not(:first-child):not(:last-child),
+#prepare-test .input-group-btn:not(:first-child):not(:last-child),
+#prepare-test .input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+#prepare-test .add-button,
+#prepare-test .delete-button {
+  display: block;
+  margin-top: 7px;
+}
+#prepare-test .add-button span,
+#prepare-test .delete-button span {
+  background: #EC9123;
+}
+#prepare-test .delete-button span {
+  background: #a94442;
+}
+#prepare-test .advanced-options {
+  display: none;
+  margin-bottom: 8px;
+}
+#prepare-test .advanced-options .toggle-link {
+  border-bottom: 1px dashed;
+}
+#prepare-test .advanced-options .toggle-link:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+#prepare-test .advanced-options .panel {
+  display: none;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.9);
+}
+#prepare-test .advanced-options .panel.expanded {
+  display: block;
+}
+#prepare-test .advanced-options .panel > div {
+  border-bottom: 1px solid #cacaca;
+}
+#prepare-test .advanced-options .panel > div:last-child {
+  border-bottom: none;
+}
+#prepare-test .advanced-options .panel h5 {
+  font-weight: bold;
+  color: #000;
+}
+#prepare-test .advanced-options .panel label {
+  color: #333;
+}

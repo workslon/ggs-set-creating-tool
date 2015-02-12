@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>GGS - Test Preparation Tool</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/merge.css" rel="stylesheet">
+</head>
+
+<body style="-webkit-app-region: drag">
+<div id="wrapper">
+  <div id="window-controls">
+    <div id="window-hide-btn">_</div>
+    <div id="window-close-btn">&times;</div>
+  </div>
+  <header>
+    <img src="images/logo.png">
+  </header>
+
+  <div class="alert alert-danger" id="alert">
+    <button class="close" data-dismiss="alert" type=
+    "button"><span>&times;</span><span class="sr-only">Close</span></button>
+
+    <p></p>
+  </div>
+
+  <div class="well">
+    <label class="sr-only" for="game">Game:</label><select class="form-control"
+    id="game">
+      <option value="__Empire">
+        Empire
+      </option>
+
+      <option value="__EmpireToGo">
+        Empire - Four Kingdoms
+      </option>
+    </select>
+  </div>
+
+  <section class="visible" id="create-set">
+    <form id="create-set-form" name="create-set-form">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">
+            AM -
+          </div><input class="form-control" id="ticket" placeholder=
+          "Ticket Nr." type="text">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" id="set" placeholder="Set Name" type=
+        "text">
+      </div>
+
+      <div class="form-group">
+        <label><input checked="checked" id="format-names" type="checkbox"
+        value=" Remove file size from image name (e.g. &quot;_149KB&quot;)">
+        <span>Remove file size from image name (e.g.
+        &quot;_149KB&quot;)</span></label>
+      </div>
+
+      <div class="form-group">
+        <a class="btn btn-primary btn-lg btn-block" href="javascript:void(0)"
+        id="btn-create">Create Set</a>
+      </div>
+    </form>
+  </section>
+</div>
+<script src="js/jquery.min.js">
+</script><script src="js/app.js"></script>
+</body>
+</html>

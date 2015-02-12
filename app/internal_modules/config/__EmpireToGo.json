@@ -1,0 +1,36 @@
+{
+  "languages": {
+    "default": ["en", "de", "fr"]
+  },
+
+  "mobile": {
+    "extension": {
+      "all": ["jpg"],
+      "default": ["jpg"]
+    },
+    "formats": {
+      "all": ["300x250", "320x480", "380x320"],
+      "default": ["300x250", "320x480", "380x320"]
+    }
+  },
+  "tablet": {
+    "extensions": {
+      "all": ["jpg"],
+      "default": ["jpg"]
+    },
+    "formats": {
+      "all": ["768x1024", "1024x768"],
+      "default": ["768x1024"]
+    }
+  },
+  "standart": {
+    "extensions": {
+      "all": ["jpg", "gif"],
+      "default": ["gif"]
+    },
+    "formats": {
+      "all": ["300x250", "320x50", "480x32", "728x90"],
+      "default": ["300x250", "320x50", "480x32", "728x90"]
+    }
+  }
+}
